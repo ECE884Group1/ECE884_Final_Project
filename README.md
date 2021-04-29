@@ -1,4 +1,4 @@
-<img height='60px' src='doc/logo/MSU_logo.png'/>
+<img height='120px' src='doc/logo/MSU_logo.png'/>
 
 ## Soft Deep Q-Learning with cross entropy regulation. 
 This repository contains multiple deep Q-learning algorithm with an emphasis on faster and better convergence. A newton raphson approximation is explored in the update rule and compared against a vanilla deep Q-network (DQN) and against a novel algorithm named Soft-Q CE, which augment a novel cross entropy loss function.
