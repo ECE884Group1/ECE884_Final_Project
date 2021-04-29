@@ -57,6 +57,10 @@ Alternate vanilla DQN uses tensorflow and keras v.
 ## Results
 We evaluate the developed algorithms in the CartPole v1 and MountainCar v0.
 
+Cart Pole                  |  Mountain Car
+:-------------------------:|:-------------------------:
+![](doc/MountainCar-v0.gif)  |  ![](doc/CartPole-v1.gif)
+
 <p float="center">
   <img src="doc/MountainCar-v0.gif" width="300" />
   <img src="doc/CartPole-v1.gif" width="300" />
