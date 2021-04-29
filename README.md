@@ -92,6 +92,11 @@ batch = agent_CE.replay_buffer.sample_batch(batch_size)
 
 ```
 
+
+You can use 'vanilla_Q.py' for implementation of default DQN algorithm using Pytorch.
+
+
+
 ## Results
 We evaluate the developed algorithms in the CartPole v1 and MountainCar v0.
 
