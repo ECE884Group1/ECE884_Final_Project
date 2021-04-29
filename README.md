@@ -73,6 +73,16 @@ The convergence plot for the TDProp Q and Soft-Q CE for the CartPole environment
   <img src="doc/results/DQN TD vs D r_train (CP).png" width="300" />
 </p>
 
+|      Algorithm     | Average rewards Cart Pole | Average rewards Mountain Car |
+|:------------------:|:-------------------------:|:----------------------------:|
+| 2 Hidden layer DQN |           206.4           |            -118.21           |
+| 4 Hidden layer DQN |            500            |            -101.07           |
+| 7 Hidden layer DQN |           106.45          |            -107.07           |
+|     Deep 96 DQN    |            500            |            -101.60           |
+|    Deep 128 DQN    |            500            |            -126.47           |
+|    Deep 256 DQN    |            500            |            -107.66           |
+|     TDProp DQN     |            500            |            -121.02           |
+|      Soft-Q CE     |            500            |            -100.01           |
 
 ## Citation
 
