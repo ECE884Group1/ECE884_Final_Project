@@ -80,7 +80,7 @@ The convergence plot for the TDProp Q and Soft-Q CE for the CartPole environment
 
 Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
 :-----------------------------------:|:---------------------------------------:
-![](doc/results/DQN CE vs D r_train (CP).png)|![](doc/results/DQN TD vs D r_train (CP).png)
+![](doc/results/DQN_CE_vs_D_r_train_(CP).png)|![](doc/results/DQN_TD_vs_D_r_train_(CP).png)
 
 
 [comment]:<p float="center">
