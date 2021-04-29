@@ -57,6 +57,40 @@ Alternate vanilla DQN uses tensorflow and keras v.
 
 ## Usage 
 
+You can use 'DQN_softQ_CE.py' or 'DQN_TD.py' as a template for training using either the CE loss or TDProp-Q respectively. You can import the algorithm through the RL_algo.py. The main arguments include **environment (gym), batch size, discount factor, learning rate, neural network size (tuple)**. Check below for the code snippet with the main components.
+
+```Python
+import gym
+import import RL_algo as RL
+
+
+# Import gym environment. 
+env_name = 'CartPole-v1'
+
+# Batch size.
+batch_size = 32
+# Discount factor.
+gamma = 0.99
+# Neural networ size.
+NN_hidden_size = (96,96,48)
+# DQN_CE agent.
+agent_CE = RL.DQN_CE(env, batch_size = batch_size, gamma=gamma,\
+               lr= 1e-3,hidden_sizes = NN_hidden_size)
+
+
+########### Loop (for every episode) #############
+########### Loop (for every time step) ###########
+.
+.
+.
+# Update the parameters with the sampled batch. 
+batch = agent_CE.replay_buffer.sample_batch(batch_size)
+.
+.
+.
+.
+
+```
 
 ## Results
 We evaluate the developed algorithms in the CartPole v1 and MountainCar v0.
@@ -108,13 +142,14 @@ Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
 ```
 @article{Soft_Q_CE,
       title={Soft Q-Learning with cross entropy regulation}, 
-      author={Sandeep Banike, Hrishikesh Dutta, Amit Kumar Bhuyan and Avirup Roy},
+      author={Sandeep Banik, Hrishikesh Dutta, Amit Kumar Bhuyan and Avirup Roy},
       year={2021},
       journal = {GitHub repository},
   	  howpublished = {\url{https://github.com/ECE884Group1/ECE884_Final_Project}
 }
 ```
 
+
 ## Troubleshootings / Discussion
 
-If you have any problem using repository or want to be a part of the project, contact any of the authors.
+If you have any problem using repository or want to be a part of the project, contact any of the authors. [Sandeep Banik](baniksan@msu.edu), [Hrishikesh Dutta](duttahr1@msu.edu), [Amit Kumar Bhuyan](bhuyanam@msu.edu) and [Avirup Roy](royaviru@msu.edu) 
