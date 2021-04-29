@@ -69,7 +69,7 @@ Cart Pole                  |  Mountain Car
 The convergence plot for the TDProp Q and Soft-Q CE for the MountainCar environment are shown below.
 Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
 :-----------------------------------:|:---------------------------------------:
-![](<image src = "doc/results/DQN CE vs D r_train (MC).png"></image>)|![](<src = "doc/results/DQN TD vs D r_train (MC).png"/>)
+![](<image src = "doc/results/DQN CE vs D r_train (MC).png"></image>)|![](<image src = "doc/results/DQN TD vs D r_train (MC).png"></image>)
 
 [comment]: <p float="center">
 [comment]:  <img src="doc/results/DQN CE vs D r_train (MC).png" width="300" />
