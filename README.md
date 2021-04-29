@@ -50,6 +50,10 @@ Alternate vanilla DQN uses tensorflow and keras v.
     to install Tensorflow 1.14, which is the latest version of Tensorflow supported by the master branch. Refer to [TensorFlow installation guide](https://www.tensorflow.org/install/)
     for more details. 
     
+    In the codes for the baseline methods for both the Cartpole and the Mountain car environments, Keras has been used to implement Tensorflow. Keras is an open-source software library that provides a Python interface for the TensorFlow library.
+    ```bash 
+   pip install keras
+    ```
 
 ## Usage 
 
