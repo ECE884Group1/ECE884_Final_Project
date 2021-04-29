@@ -1,4 +1,4 @@
-<img height='60px' src='doc/logo/msu.gif'/>
+<img height='60px' src='doc/logo/MSU_logo.png'/>
 
 ## Soft Deep Q-Learning with cross entropy regulation. 
 This repository contains multiple deep Q-learning algorithm with an emphasis on faster and better convergence. A newton raphson approximation is explored in the update rule and compared against a vanilla deep Q-network (DQN) and against a novel algorithm named Soft-Q CE, which augment a novel cross entropy loss function.
@@ -69,7 +69,7 @@ Cart Pole                  |  Mountain Car
 The convergence plot for the TDProp Q and Soft-Q CE for the MountainCar environment are shown below.
 Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
 :-----------------------------------:|:---------------------------------------:
-![](<image src = "doc/results/DQN CE vs D r_train (MC).png"></image>)|![](<image src = "doc/results/DQN TD vs D r_train (MC).png"></image>)
+![](doc/results/DQN_CE_vs_D_r_train_(MC).png)|![](doc/results/DQN_TD_vs_D_r_train_(MC).png)
 
 [comment]: <p float="center">
 [comment]:  <img src="doc/results/DQN CE vs D r_train (MC).png" width="300" />
@@ -80,7 +80,7 @@ The convergence plot for the TDProp Q and Soft-Q CE for the CartPole environment
 
 Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
 :-----------------------------------:|:---------------------------------------:
-![](doc/results/DQN CE vs D r_train (CP).png)|![](doc/results/DQN TD vs D r_train (CP).png)
+![](doc/results/DQN_CE_vs_D_r_train_(CP).png)|![](doc/results/DQN_TD_vs_D_r_train_(CP).png)
 
 
 [comment]:<p float="center">
