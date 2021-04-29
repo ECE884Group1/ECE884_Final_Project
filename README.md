@@ -59,23 +59,34 @@ We evaluate the developed algorithms in the CartPole v1 and MountainCar v0.
 
 Cart Pole                  |  Mountain Car
 :-------------------------:|:-------------------------:
-![](doc/MountainCar-v0.gif)  |  ![](doc/CartPole-v1.gif)
+![](doc/MountainCar-v0.gif)|![](doc/CartPole-v1.gif)
 
-<p float="center">
-  <img src="doc/MountainCar-v0.gif" width="300" />
-  <img src="doc/CartPole-v1.gif" width="300" />
-</p>
+[comment]: <p float="center">
+[comment]:   <img src="doc/MountainCar-v0.gif" width="300" />
+[comment]:   <img src="doc/CartPole-v1.gif" width="300" />
+[comment]: </p>
 
-The convergence plot for the TDProp Q and Soft-Q CE for the MountainCar environment are shown below 
-<p float="center">
-  <img src="doc/results/DQN CE vs D r_train (MC).png" width="300" />
-  <img src="doc/results/DQN TD vs D r_train (MC).png" width="300" />
-</p>
+The convergence plot for the TDProp Q and Soft-Q CE for the MountainCar environment are shown below.
+Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
+:-----------------------------------:|:---------------------------------------:
+![](doc/results/DQN CE vs D r_train (MC).png)|![](doc/results/DQN TD vs D r_train (MC).png)
+
+[comment]: <p float="center">
+[comment]:  <img src="doc/results/DQN CE vs D r_train (MC).png" width="300" />
+[comment]:  <img src="doc/results/DQN TD vs D r_train (MC).png" width="300" />
+[comment]: </p>
+
 The convergence plot for the TDProp Q and Soft-Q CE for the CartPole environment are shown below 
-<p float="center">
-  <img src="doc/results/DQN CE vs D r_train (CP).png" width="300" />
-  <img src="doc/results/DQN TD vs D r_train (CP).png" width="300" />
-</p>
+
+Cross Entropy (CE) vs 4 Hidden layer |  TDProp Q (TD) vs 4 Hidden layer (D 4HL)
+:-----------------------------------:|:---------------------------------------:
+![](doc/results/DQN CE vs D r_train (CP).png)|![](doc/results/DQN TD vs D r_train (CP).png)
+
+
+[comment]:<p float="center">
+[comment]:  <img src="doc/results/DQN CE vs D r_train (CP).png" width="300" />
+[comment]:  <img src="doc/results/DQN TD vs D r_train (CP).png" width="300" />
+[comment]:</p>
 
 |      Algorithm     | Average rewards Cart Pole | Average rewards Mountain Car |
 |:------------------:|:-------------------------:|:----------------------------:|
