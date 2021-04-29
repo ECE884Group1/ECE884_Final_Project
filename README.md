@@ -7,7 +7,7 @@ This repository contains multiple deep Q-learning algorithm with an emphasis on 
 In the search for faster and better convergence of Deep Q-Learning methods we augment the original temporal difference (TD) loss with a novel loss function, i.e., with cross entropy (CE) loss. We use Double Q-Learning method consisting of a main and a target network. The CE loss is calculated between the main and the target network.
 
 <p align="center">
-<img src="doc/CE_loss.png" width="100">
+<img src="doc/CE_loss.png" width="300">
 </p>
 
 The augment CE loss is compared against a benchmark DQN. Additionally, we have explored a newton raphson method approximation for updating the weight of the DQN extened from TDProp algorithm (check reference).  
@@ -58,19 +58,19 @@ Alternate vanilla DQN uses tensorflow and keras v.
 We evaluate the developed algorithms in the CartPole v1 and MountainCar v0.
 
 <p float="center">
-  <img src="doc/MountainCar-v0.gif" width="100" />
-  <img src="doc/CartPole-v1.gif" width="100" />
+  <img src="doc/MountainCar-v0.gif" width="300" />
+  <img src="doc/CartPole-v1.gif" width="300" />
 </p>
 
 The convergence plot for the TDProp Q and Soft-Q CE for the MountainCar environment are shown below 
 <p float="center">
-  <img src="doc/results/DQN CE vs D r_train (MC).png" width="100" />
-  <img src="doc/results/DQN TD vs D r_train (MC).png" width="100" />
+  <img src="doc/results/DQN CE vs D r_train (MC).png" width="300" />
+  <img src="doc/results/DQN TD vs D r_train (MC).png" width="300" />
 </p>
 The convergence plot for the TDProp Q and Soft-Q CE for the CartPole environment are shown below 
 <p float="center">
-  <img src="doc/results/DQN CE vs D r_train (CP).png" width="100" />
-  <img src="doc/results/DQN TD vs D r_train (CP).png" width="100" />
+  <img src="doc/results/DQN CE vs D r_train (CP).png" width="300" />
+  <img src="doc/results/DQN TD vs D r_train (CP).png" width="300" />
 </p>
 
 
