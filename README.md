@@ -56,7 +56,7 @@ Alternate vanilla DQN uses tensorflow and keras v.
     ```
 
 ## Usage 
-You can run 'Cartpole_Baseline.py' and 'Mountain_Car_baseline.py' as a baseline for the proposed loss. Their primary purpose is to implement and evaluate the affect of depth and with in a Deep Q-Network for both the environments viz. CartPole and MountainCar. The code snippet mentioned below exemplifies two of the structures for DQN:
+You can run 'Cartpole_Baseline.py' and 'Mountain_Car_baseline.py' as a baseline for the proposed loss. Their primary purpose is to implement and evaluate the affect of depth and width in a Deep Q-Network for both the environments viz. CartPole and MountainCar. The code snippet mentioned below exemplifies two of the structures for DQN:
 
 ```Python
 import keras  ## Import the Keras
