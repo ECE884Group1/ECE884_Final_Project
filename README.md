@@ -88,6 +88,7 @@ def get_model():  ## Build the Deep Q-Network
 
     return model
 ```
+
 ```Python
 from tensorflow.keras import models
 from tensorflow.keras import layers
