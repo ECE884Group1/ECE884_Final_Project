@@ -88,6 +88,26 @@ def get_model():  ## Build the Deep Q-Network
 
     return model
 ```
+```Python
+from tensorflow.keras import models
+from tensorflow.keras import layers
+from tensorflow.keras.optimizers import Adam
+.
+.
+.
+
+## DQN WITH 2 HIDDEN LAYERS FOR CARTPOLE
+def createNetwork(self):
+        model = models.Sequential()
+        state_shape = self.env.observation_space.shape
+
+        model.add(layers.Dense(24, activation='relu', input_shape=state_shape))
+        model.add(layers.Dense(48, activation='relu'))
+        model.add(layers.Dense(self.env.action_space.n,activation='linear'))
+        # model.compile(optimizer=optimizers.RMSprop(lr=self.learingRate), loss=losses.mean_squared_error)
+        model.compile(loss='mse', optimizer=Adam(lr=self.learingRate))
+        return model
+```
 
 You can use 'DQN_softQ_CE.py' or 'DQN_TD.py' as a template for training using either the CE loss or TDProp-Q respectively. You can import the algorithm through the RL_algo.py. The main arguments include **environment (gym), batch size, discount factor, learning rate, neural network size (tuple)**. Check below for the code snippet with the main components.
 
