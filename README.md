@@ -56,6 +56,38 @@ Alternate vanilla DQN uses tensorflow and keras v.
     ```
 
 ## Usage 
+You can run 'Cartpole_Baseline.py' and 'Mountain_Car_baseline.py' as a baseline for the proposed loss. Their primary purpose is to implement and evaluate the affect of depth and with in a Deep Q-Network for both the environments viz. CartPole and MountainCar. The code snippet mentioned below exemplifies two of the structures for DQN:
+
+```Python
+import keras  ## Import the Keras
+from keras.models import Sequential  ## Sequential model from Keras
+from keras.layers import Dense  ## Dense Layer from Keras
+from keras.optimizers import Adam  ## Adam Optimizer from Keras
+from keras.models import load_model  ## For saving and loading the Keras model
+.
+.
+.
+
+## DQN WITH 4 HIDDEN LAYERS FOR CARTPOLE
+def get_model():  ## Build the Deep Q-Network
+    model = Sequential()  ## Type of Model
+    ####
+    ## Input layer of Dimension 4 and 4 Hidden Layer of 24/48/48/48 nodes. Activation 'relu'
+    ####
+    model.add(Dense(24, input_shape=(OBSERVATIONS_DIM, ), activation='relu'))
+    model.add(Dense(48, activation='relu'))  ## Add second Hidden Layer of 24 nodes. Activation 'relu'
+    model.add(Dense(48, activation='relu')) 
+    model.add(Dense(48, activation='relu')) 
+    model.add(Dense(2, activation='linear'))  ## Add output layer of dimension 2. Activation 'linear'
+
+    model.compile(  ## Compile the Model
+        optimizer=Adam(lr=LEARNING_RATE),  ## Adam Optimizer with Initial Learning Rate=0.001 
+        loss='mse',  ## MSE Loss
+        metrics=[],
+    )
+
+    return model
+```
 
 You can use 'DQN_softQ_CE.py' or 'DQN_TD.py' as a template for training using either the CE loss or TDProp-Q respectively. You can import the algorithm through the RL_algo.py. The main arguments include **environment (gym), batch size, discount factor, learning rate, neural network size (tuple)**. Check below for the code snippet with the main components.
 
