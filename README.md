@@ -96,7 +96,7 @@ from tensorflow.keras.optimizers import Adam
 .
 .
 
-## DQN WITH 2 HIDDEN LAYERS FOR CARTPOLE
+## DQN WITH 2 HIDDEN LAYERS FOR MOUNTAIN CAR
 def createNetwork(self):
         model = models.Sequential()
         state_shape = self.env.observation_space.shape
